@@ -3,3 +3,51 @@
     margin: 0;
     padding: 0;
 }
+
+:root {
+    font-size: 10vmin;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-img {
+    max-height: 1.5rem;
+    max-width: auto;
+
+}
+
+.text-header > span {
+    font-size: 1rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    position: relative;
+    bottom: 0.4rem;
+}
+
+.nav-bar {
+    align-self: stretch;
+}
+
+.nav-bar  ul {
+    font-size: 0.5rem;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar  li {
+    flex: 1;
+}
+
+
