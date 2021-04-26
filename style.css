@@ -52,10 +52,18 @@
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
     .header {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .logo, .nav-bar {
-        align-self: center;
+        flex-basis: 100%;
+    }
+
+    .logo{
+        justify-content: center;
+    }
+
+    .nav-bar ul {
+        justify-content: center;
     }
 }
