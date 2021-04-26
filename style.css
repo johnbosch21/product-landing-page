@@ -9,9 +9,8 @@
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
+body {
+    min-height: 1vh;
 }
 
 .header {
