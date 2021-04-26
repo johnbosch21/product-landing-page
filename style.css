@@ -5,49 +5,57 @@
 }
 
 :root {
-    font-size: 10vmin;
+    font-size: 5vmin;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 2rem;
 }
 
-.header-img {
-    max-height: 1.5rem;
-    max-width: auto;
-
+.logo {
+    background-color: chocolate;
+    flex: 1;
+    display: flex;
 }
 
-.text-header > span {
+.logo img {
+    height: 2rem;
+}
+
+.logo h1 {
     font-size: 1rem;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
-    position: relative;
-    bottom: 0.4rem;
+    align-self: center;
 }
 
 .nav-bar {
-    align-self: stretch;
+    background-color: crimson;
+    height: inherit;
+    flex-basis: 70%;
 }
 
-.nav-bar  ul {
-    font-size: 0.5rem;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    text-align: center;
+.nav-bar ul {
+    height: inherit;
+    font-size: 1rem;
+    font-weight: 300;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.nav-bar a {
-    text-decoration: none;
-    color: black;
+.nav-bar li {
+    margin: 0 0.5rem;
 }
 
-.nav-bar  li {
-    flex: 1;
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo, .nav-bar {
+        align-self: center;
+    }
 }
-
-
