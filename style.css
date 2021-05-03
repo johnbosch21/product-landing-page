@@ -5,7 +5,7 @@
 }
 
 :root {
-    font-size: 4vmin;
+    font-size: 3vmin;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
@@ -15,35 +15,28 @@ body {
 
 .header {
     display: flex;
-    height: 2rem;
+    height: 4rem;
 }
 
     .logo {
-        background-color: chocolate;
+        /* background-color: chocolate; */
         flex: 1;
         display: flex;
         align-items: center;
     }
-
         .logo img {
-            height: 1.5rem;
+            height:2.5rem;
+            margin-left: 0.1rem;
         }
-
-        .logo h1 {
-            margin-left: 0.2rem;
-            font-size: 1rem;
-            font-weight: 300;
-        }
-
     .nav-bar {
-        background-color: crimson;
+        /* background-color: crimson; */
         height: inherit;
         flex-basis: 70%;
     }
 
         .nav-bar ul {
             height: inherit;
-            font-size: 1rem;
+            font-size: 0.5rem;
             font-weight: 300;
             list-style: none;
             display: flex;
@@ -55,61 +48,258 @@ body {
                 margin: 0 0.5rem;
             }
 
+            .nav-bar a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .nav-bar a:hover {
+                text-decoration: underline;
+            }
+
 
 .main-container {
-    width: 80%;
-    background-color: lightblue;
-    min-height: 1vh;
+    max-width: 60%;
+    /* background-color: lightblue; */
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     margin: auto;
 }
 
     .form-email {
-        width: inherit;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 2rem;
     }
 
         .text-email {
             font-size: 0.8rem;
-            font-weight: 400;
+            font-weight: 600;
             text-align: center;
-            margin: 0.5rem 0;
+            margin-bottom: 0.5rem;
         }
 
         .form-email input {
             font-size: 0.5rem;
             font-weight: 300;
-            width: 30%;
+            width: 10rem;
+            height: 1rem;
             margin-bottom: 0.4rem;
+            border: 0.1rem solid black;
+            border-radius: 0.125rem;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
         }
 
-        .form-email button{
+        .form-email .submit{
             font-size: 0.5rem;
             font-weight: 300;
-            width: 20%;
+            width: 7rem;
+            height: 1rem;
             margin-bottom: 0.5rem;
+            border: 0.05rem solid black;
+            border-radius: 0.125rem;
+            background-color: black;
+            color: white;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
         }
 
+        .form-email .submit:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+    
+    .about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 0.5rem; 
+    }
+
+        .child-about {
+            /* border-style: solid;
+            border-width: 0.1rem;
+            border-color: black; */
+            display: flex;
+            align-items: center;
+            height: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .child-about img {
+            height: 2rem;
+            margin-left: 0.25rem;
+        }
+
+        .child-about div {
+            height: 2rem;
+            margin-left: 2rem;
+        }
+
+        .child-about h3 {
+            font-size: 0.8rem;
+        }
+
+        .child-about p {
+            font-size: 0.5rem;
+        }
+    
+    .video-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem; 
+    }
+
+        .video {
+            max-width: 560px;
+            width: 100%;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+
+    .donate {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 3rem;
+    }
+
+        .child-donate-container {
+            flex-basis: 30%;
+            margin-right: 0.5rem;
+        }
+
+            .child-donate {
+                width: 100%;
+                height: 10rem;
+                border-style: solid;
+                border-width: 0.01rem;
+                border-color: black;
+                border-radius: 0.125rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            }
+
+                .header-child-donate, .text-child-donate, .button-child-donate {
+                    margin-bottom: 0.5rem;
+                }       
+
+                .header-child-donate {
+                    height: 3rem;
+                    align-self: stretch;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: black;
+                }
+
+                    .header-child-donate h3 {
+                        font-size: 0.8rem;
+                        color: white;
+                        text-align: center;
+                    }
+                
+                .text-child-donate {
+                    height: 5rem;
+                    display: flex;
+                    align-items: center;
+                }
+
+                    .text-child-donate p {
+                        font-size: 0.5rem;
+                        text-align: center;
+                        margin: 0 0.5rem;
+                    }  
+
+                .button-child-donate {
+                    height: 2rem;
+                }
+
+                    .button-child-donate button {
+                        font-size: 0.5rem;
+                        font-weight: 300;
+                        width: 4rem;
+                        height: 1rem;
+                        margin-bottom: 0.5rem;
+                        border: 0.05rem solid black;
+                        border-radius: 0.125rem;
+                        background-color: black;
+                        color: white;
+                        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                    }
+
+                    .button-child-donate button:hover {
+                        transform: scale(1.05);
+                        cursor: pointer;
+                    }
 
 @media only screen and (max-width: 1024px) and (orientation: portrait) {
+    :root {
+        font-size: 5vmin;
+    }
+
+    .main-container {
+        max-width: 100%;
+    }
+
     .header {
         flex-wrap: wrap;
         height: auto;
     }
 
-    .logo, .nav-bar {
+    .logo {
         flex-basis: 100%;
+        height: 3rem;
+    }
+    
+    .nav-bar {
+        flex-basis: 100%;
+        height: 2rem;
     }
 
     .logo, .nav-bar ul{
         justify-content: center;
     }
 
-    .main-container {
-        width: 100%;
+    .form-email {
+        margin-bottom: 1rem;
+    }
+
+    .child-about {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .child-about div{
+        height: auto;
+        text-align: center;
+    }
+
+    .logo img, .child-about img {
+        margin-left: 0;
+    }  
+
+    .child-about div {
+        margin: 0 0.5rem;
+    }
+
+    .donate {
+        flex-wrap: wrap;
+    }
+
+    .child-donate-container {
+        flex-basis: 100%;
+    }
+
+    .child-donate {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 2rem;
     }
 }

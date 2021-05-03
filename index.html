@@ -1,9 +1,9 @@
-<!DOCTYPE html />
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GrillMaster</title>
+  <title>Maginhawa Community Pantry</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
@@ -12,32 +12,81 @@
 <body>
     <header id="header" class="header">
         <div class="logo child-header">
-            <img id="header-img" src="./images/grillmaster-logo.png" alt="GrillMaster Logo">
-            <h1>GrillMaster</h1>
+            <img id="header-img" src="./images/logo.png" alt="GrillMaster Logo">
         </div>
 
-        <nav class="nav-bar child-header">
+        <nav id="nav-bar" class="nav-bar child-header">
             <ul>
-                <li>Features</li>
-                <li>How it Works</li>
-                <li>Pricing</li>
+                <li class="nav-link"><a href="#about">About</a></li>
+                <li class="nav-link"><a href="#video">Story</a></li>
+                <li class="nav-link"><a href="#get-involved">Get Involved</a></li>
           </ul>
         </nav>
     </header>
 
     <main class="main-container">
-        <form class="child-main form-email">
-            <h2 class="text-email">Dota 2 experience taken to the next level</h2>
+        <form id="form" class="child-main form-email" action="https://www.freecodecamp.com/email-submit">
+            <h2 class="text-email">Magbigay ayon sa kakayahan. Kumuha batay sa pangangailangan.</h2>
             <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="ex. example@email.com" required>
-            <button type="submit">Get Started</button>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            <input type="submit" id="submit" class="submit" value="I WANT TO VOLUNTEER">
         </form>
 
-        <div class="child-main feature">
-            <section class="feature-1 child-feature">1</section>
-            <section class="feature-2 child-feature">2</section>
-            <section class="feature-3 child-feature">3</section>
+        <div class="child-main about">
+            <section class="about-1 child-about" id="about">
+                <img src="./images/location.png" alt="">
+                <div>                
+                    <h3>Location</h3>
+                    <p>The Community Pantry is located at 108 Maginhawa Street. As more donations come in and the number of beneficiaries grows, the location only serves now as the drop off center for donations.</p>
+                </div>
+            </section>
+            <section class="about-2 child-about">
+                <img src="./images/teamwork.png" alt="">
+                <div>                
+                    <h3>Partner Communities</h3>
+                    <p>Most of the recipients of donations are residents of barangays in Diliman, Quezon City. We coordinate with leaders/volunteers from these barangays for a systematic and efficient distribution to the benificiaries. Other community pantries across the Philippines also receive aid from MCP.
+                    </p>
+                </div>
+            </section>
+            <section class="about-3 child-about">
+                <img src="./images/charity.png" alt="">
+                <div>
+                    <h3>Volunteers</h3>
+                    <p>The Maginhawa Community Pantry is comprised of selfless people from different backgrounds.</p>
+                </div>
+            </section>
         </div>
+
+        <div class="child-main video-container">
+            <iframe id="video" class="video" height="315" src="https://www.youtube-nocookie.com/embed/1Z8Y4NfYMgU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+
+        <div class="child-main donate" id="get-involved">
+            <section class="donate-1 child-donate-container">
+                <section class="child-donate">
+                    <section class="header-child-donate"><h3>In-kind Donation</h3></section>
+                    <section class="text-child-donate"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, consectetur?</p></section>
+                    <section class="button-child-donate"><button type="submit">SELECT</button></section>
+                </section>
+            </section>
+
+            <section class="donate-2 child-donate-container">
+                <section class="child-donate">
+                    <section class="header-child-donate"><h3>Cash Donation</h3></section>
+                    <section class="text-child-donate"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iste.</p></section>
+                    <section class="button-child-donate"><button type="submit">SELECT</button></section>
+                </section>
+            </section>
+            
+            <section class="donate-3 child-donate-container">
+                <section class="child-donate">
+                    <section class="header-child-donate"><h3>Be a Volunteer</h3></section>
+                    <section class="text-child-donate"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, aperiam.</p></section>
+                    <section class="button-child-donate"><button type="submit">SELECT</button></section>
+                </section>
+            </section>
+        </div>
+
     </main>
 
     
