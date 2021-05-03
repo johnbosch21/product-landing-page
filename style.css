@@ -101,6 +101,9 @@ body {
 
         #submit {
             display: none;
+            position: absolute;
+            left: 1000000000000000000000000;
+            top: 10000000000000000000000000;
         }
 
         .form-email .submit{
